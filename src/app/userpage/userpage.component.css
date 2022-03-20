@@ -1,0 +1,24 @@
+input.ng-touched.ng-invalid{
+    border: 2px solid red;
+}
+
+/* .inpAlert{
+    color: red;
+    font-weight: bolder;
+} */
+
+/* Attribute Directive */
+
+/* .style1{
+    font-size: 32px;
+    font-family: serif;
+}
+
+.style2{
+    border: 3px solid red;
+    background-color: yellow;
+}
+
+.style3{
+    border: 3px dotted black;
+} */

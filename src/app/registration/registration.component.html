@@ -1,0 +1,12 @@
+<p>registration works!</p>
+
+<div class="container-fluid">
+    <h4>Fill The Details</h4><br><br>
+    <form #regform= 'ngForm' (ngSubmit)= "valForm(regform.value)">
+        <input type="text" name="name" placeholder="Enter First Name" ngModel ><br><br>
+        <input type="text" name="email" placeholder="Enter Email" ngModel ><br><br>
+        <input type="text" name="password" placeholder="Enter Password" ngModel ><br><br>
+        <input type="submit" value="Log in" class="btn btn-primary">
+    </form>
+
+</div><br><br><br>

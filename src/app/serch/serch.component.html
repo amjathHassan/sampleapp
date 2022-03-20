@@ -1,0 +1,30 @@
+<p>serch works!</p>
+
+<div class="container">
+    <h1>Search User</h1>
+    <h4>Enter Name</h4><br>
+    <form #searchUser="ngForm"  (ngSubmit)="getName(searchUser.value)">
+    <input type="text" id="search" ngModel name="name" (focus)= "clear()"/>
+    <input type="submit" value="Search" class="btn btn-primary m-1">
+    </form><br><br>
+
+    <h2>Result</h2><br>
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Password</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor= 'let j of resultData'>
+                <td>{{j.id}}</td>
+                <td>{{j.name}}</td>
+                <td>{{j.email}}</td>
+                <td>{{j.password}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

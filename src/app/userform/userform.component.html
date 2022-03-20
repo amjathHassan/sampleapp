@@ -1,0 +1,30 @@
+<!-- Angular Forms -->
+
+<!--Type 2 - Reactive Angular Form -->
+
+<div class="container-fluid">
+    <h3>Reactive Forms</h3>
+    <form [formGroup]= 'userform' (ngSubmit)= 'getUser()'>
+        <input type="text" placeholder="Enter Name" formControlName= 'uName'/><br><br>
+        <input type="text" placeholder="Enter Email" formControlName= 'uEmail'/><br><br>
+        <input type="text" placeholder="Enter Password" formControlName= 'uPass'/><br><br>
+        <input type="submit" value="ADD"/>
+    </form>
+</div>
+
+<!-- Type 1 - Template Driven Form -->
+
+<!-- <div class="container-fluid">
+    <h4>ngForm in Angular</h4><br><br>
+    <form #form= "ngForm" (ngSubmit)= "formVal(form)">
+        <input type="text" name="inpName" ngModel #inpName= "ngModel" required/>
+        <span *ngIf= "inpName.touched && inpName.invalid" [ngClass]= "'alertInp'"> : Enter Your Name</span><br><br>
+        <input type="email" name="inpEmail" ngModel #inpEmail= "ngModel" required/>
+        <span *ngIf= "inpEmail.touched && inpEmail.invalid" [ngClass]= "'alertInp'"> : Enter  Email</span><br><br>
+        <input type="text" name="inpPwd" ngModel #inpPwd= "ngModel" required/>
+        <span *ngIf= "inpPwd.touched && inpPwd.invalid" [ngClass]= "'alertInp'"> : Enter Password</span><br><br>
+        <span *ngIf= "form.touched && form.invalid" [ngClass]= "'alertInp'">Please Confirm, Above fields Are Filled. </span><br><br>
+        <input type="submit" [disabled]= "form.invalid"/>
+    </form><br><br> 
+    <p>{{form.value | json}}</p>
+</div> -->

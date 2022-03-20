@@ -1,0 +1,12 @@
+<h4>Update Profile</h4><br><br>
+<form #editform="ngForm" (ngSubmit)="update(editform.value)">
+    <label for="name"> ID : </label>
+    <input type="text" [(ngModel)]="textid" name="id"><br><br>
+    <label for="name"> Name : </label>
+    <input type="text" [(ngModel)]="textname" name="name"><br><br>
+    <label for="email">Email : </label>
+    <input type="text" [(ngModel)]="textemail" name="email" ><br><br>
+    <label for="password" >Password : </label>
+    <input type="text" [(ngModel)]="textpsd" name="password"><br><br>
+    <input type="submit" class="btn btn-primary" value="Upadate"><br><br>   
+</form>

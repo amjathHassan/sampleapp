@@ -1,0 +1,10 @@
+<div class="container-fluid">
+    <h4>Log In Here</h4><br><br>
+    <form #logform= 'ngForm' (ngSubmit)= "logVal(logform.value)">
+        <label for="email">Enter Email :</label>
+        <input type="text" name="email" placeholder="Enter Email" ngModel /><br><br>
+        <label for="email">Enter Password :</label>
+        <input type="text" name="password" placeholder="Enter Password" ngModel /><br><br>
+        <input type="submit" class="btn btn-primary" value="Log in" />
+    </form>
+</div><br><br><br>
